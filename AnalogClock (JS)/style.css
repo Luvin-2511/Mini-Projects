@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #282828;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    margin: 80px 100px;
+    height: 80vh;
+}
+
+.clock {
+    border: 20px solid  #282828;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0),
+    inset 10px 10px 10px rgb(0, 0, 0),
+    inset 10px 10px 10px black;
+    height: 80%;
+    width: 70%;
+    border-radius: 50%;
+    position: relative;
+    background:linear-gradient(180deg,#282828,rgb(88, 75, 75));
+    backdrop-filter: blur(40px);
+}
+.minute,.hour,.second {
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    transform-origin:bottom;
+}
+
+.minute {
+    top: 8%;
+    height: 42%;
+    width: 7px;
+    left: 49.5%;
+    right: 49.5%;
+    background-color: rgb(130, 130, 130);
+}
+
+.second {
+    top: 3%;
+    left: 49.5%;
+    right: 49.5%;
+    height: 47%;
+    width: 7px;
+    background-color: rgb(255, 42, 0);
+}
+.dot {
+    height: 4%;
+    width: 4%;
+    background-color: rgb(106, 106, 106);
+    border-radius: 50%;
+    position: relative;
+    top: 48%;
+    right: 48%;
+    bottom: 48%;
+    left: 48%;
+    z-index: 10;
+
+}
+.smalldot {
+    height: 2%;
+    width: 2%;
+     background-color: rgb(0, 0, 0);
+     border-radius: 50%;
+    position: relative;
+    top: 45%;
+    right: 49%;
+    bottom: 49%;
+    left: 49%;
+    z-index: 11;
+}
+
+.hour {
+    left: 49.5%;
+    height: 35%;
+    width: 15px;
+    right: 49.5%;
+    top: 15%;
+    
+    background-color: #707070;
+}
