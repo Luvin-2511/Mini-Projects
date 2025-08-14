@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Impact';
+
+}
+
+*::selection {
+    color: white;
+    background-color: black;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+
+    .one {
+        overflow: hidden;
+        height: 83px;
+
+        svg {
+            display: block;
+        }
+
+    }
+
+    #right {
+        display: flex;
+        gap: 60px;
+        justify-content: flex-start;
+
+        .links {
+            display:flex;
+            gap: 60px;
+            a {
+                font-size: medium;
+                font-weight: 100;
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+
+
+        #icons {
+            width: 120px;
+            padding: 9px;
+            position: relative;
+            top: -10px;
+            background-color: #f7f7f7;
+            border-radius: 40px;
+
+            i:nth-child(2) {
+                margin-left: 60px;
+                font-size: large;
+            }
+        }
+    }
+}
+
+#page1 {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-top: 17vh;
+
+    h1 {
+        font-size: 20vw;
+        padding-left: 2vw;
+        line-height: 18vw;
+        background-color: #f7f7f7;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+        z-index: 10;
+    }
+
+    #imgcont {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        padding: 1vh 1vw;
+        overflow: hidden;
+
+        #play {
+            padding: 3.5vw 3vw;
+            background-color: black;
+            color: white;
+            font-size: 2vw;
+            position: fixed;
+            border-radius: 50%;
+            opacity: 0;
+            scale: 0;
+        }
+
+        img {
+            width: 100%;
+            position: relative;
+        }
+    }
+}
+
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5vw;
+    padding: 0 2vw;
+
+    .elem {
+        height: 100%;
+        width: 32.5%;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            scale: 1.1;
+        }
+
+        .dets {
+            height: 57px;
+            width: 64%;
+            position: absolute;
+            border-radius: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 59;
+            background-color: aliceblue;
+            transition: all 0.2s ease;
+
+            .upper {
+                height: 57px;
+                width: 100%;
+                border-radius: 30px;
+                position: absolute;
+                top: 0;
+                z-index: 59;
+                background-color: #dcc0b4;
+                transition: all 0.2s ease;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                font-size: large;
+            }
+
+            .lower {
+                height: 0px;
+                width: 100%;
+                border-radius: 30px;
+                position: absolute;
+                top: 0;
+                z-index: 54;
+                background-color: aliceblue;
+                transition: all 0.2s ease;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+
+                .cont {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 7px;
+
+                    img {
+                        height: 150px;
+                    }
+                }
+            }
+
+            .upper:hover~.lower {
+                opacity: 1;
+                height: 270px;
+            }
+        }
+
+        .dets:hover {
+            top: 61.8%;
+            height: 270px;
+        }
+    }
+}
+
+#page3 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        padding-top: 50px;
+        padding-left: 30px;
+        line-height: 60px;
+
+        h1 {
+            letter-spacing: 4px;
+        }
+    }
+
+    .right {
+        width: 650px;
+        position: relative;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 50px;
+        padding-right: 150px;
+        font-size: 15px;
+        font-weight: 100;
+
+        a {
+            color: black;
+        }
+    }
+}
+
+#page4 {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    position: relative;
+    gap: 50px;
+
+    #circle {
+        height: 250px;
+        width: 250px;
+        padding: 3.5vw 3vw;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        font-size: 2vw;
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0;
+        scale: 0;
+        z-index: 10;
+        transform: translate(-50%, 50%);
+    }
+
+    .dabbe {
+        height: 40%;
+        width: 40%;
+        margin: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+        font-size: large;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 11;
+        }
+    }
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+}
