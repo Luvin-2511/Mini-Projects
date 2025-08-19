@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(rgb(255, 65, 17) 50%,rgb(0, 0, 0) 50%);
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 19px;
+    position: relative;
+    height: auto;
+    width: 50vw;
+    background: linear-gradient(360deg ,rgb(255, 68, 0),rgb(0, 0, 0));
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+}
+
+.container .input-box {
+    width: 99%;
+    position:relative;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 0px 30px;
+    background:linear-gradient(to left,rgba(36, 30, 30,0.3),rgba(102, 102, 120 ,0.4));
+    backdrop-filter: blur(40px);
+    border:2px solid rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(143, 119, 119,0.2);
+}
+
+.container .input-box::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.container  .btn{
+    position: absolute;
+    right: 3%;
+    font-size: 20px;
+    padding: 10px;
+    height: 60px;
+    width: 20%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.container  .btn:hover{
+    background-color: rgb(57, 57, 57);
+    color: white;
+    border: 3px solid white;
+}
+
+.result {
+    position: relative;
+}
+.result  img:first-child{
+    margin: 20px 5px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px black;
+    height: 450px;
+}
+
+.info{
+    display: flex;
+}
+
+.info h1{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 14px;
+}
+.rating {
+    display: flex;
+    gap:10px;
+}
+.rating h3{
+    position: relative;
+    top: -9px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: rgb(202, 202, 202);
+}
+
+.rating img:first-child{
+    box-shadow: none;
+    height: 50px;
+    padding-left: 15px;
+    position: relative;
+    top: -40px;
+}
+
+
+.genre{
+    display: flex;
+    gap: 30px;
+    position: relative;
+    left: 25px;
+    top: -40px;
+}
+.genre div{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content:center ;
+    border: 2px solid rgba(255, 255, 255,0.3);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.genre div:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+}
+
+.plot{
+    margin: 15px 25px;
+    margin-top: 35px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -50px;
+}
+.plot h2:nth-child(2){
+    font-size: 16px;
+    color: rgb(207, 207, 207);
+}
+
+.cast{
+    height: 20px;
+    margin: 15px 25px;
+    margin-top: 35px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: -50px;
+}
+
+.cast h2:nth-child(2){
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    color: rgb(207, 207, 207);
+}
